@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghana - Country Page</title>
+    <meta name="description" content="Discover Ghana: rich culture, vibrant cities, and warm hospitality.">
+    <meta name="author" content="Your Name">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Ghana</h1>
+    </header>
+
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/ghana-hero-large.webp" media="(min-width: 768px)">
+                <img src="images/ghana-hero-small.webp" alt="Independence Arch in Accra, Ghana" width="800" height="400">
+            </picture>
+        </div>
+
+        <div class="content-wrapper">
+            <section class="place-info">
+                <h2>About Ghana</h2>
+                <p>Ghana, known as the "Gateway to Africa," was the first African nation to gain independence from colonial rule. It is celebrated for its stable democracy, rich cultural heritage, and warm, welcoming people.</p>
+                <p>From the historic Cape Coast Castle to the bustling markets of Accra and the wildlife of Mole National Park, Ghana offers a diverse and unforgettable experience.</p>
+                <p><strong>Capital:</strong> Accra</p>
+                <p><strong>Official Language:</strong> English</p>
+                <p><strong>Population:</strong> Approximately 34 million</p>
+                <p><strong>Currency:</strong> Ghana Cedi (GHS)</p>
+            </section>
+
+            <section class="weather">
+                <h2 class="weather-title">Weather</h2>
+                
+                <img src="images/weather-icon.svg" alt="Sunny weather icon" class="weather-icon-svg" width="60" height="60">
+                
+                <div class="weather-data">
+                    <p>Temperature: <span id="temp">8</span>&deg;C</p>
+                    <p>Wind Speed: <span id="wind-speed">15</span> km/h</p>
+                    <p>Wind Chill: <span id="wind-chill">N/A</span></p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Ghana Explorer | Last Modified: <span id="last-modified"></span></p>
+    </footer>
+</body>
+</html>

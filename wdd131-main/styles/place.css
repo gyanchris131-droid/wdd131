@@ -1,0 +1,121 @@
+:root {
+    --ghana-green: #006B3F;
+    --ghana-gold: #FCD116;
+    --ghana-red: #CE1126;
+    --text-color: #1a1a1a;
+    --bg-color: #f5f5f0;
+    --card-bg: #ffffff;
+    --font-heading: Georgia, serif;
+    --font-body: Arial, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--ghana-green);
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    border-bottom: 6px solid var(--ghana-gold);
+}
+
+header h1 {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+.hero picture,
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.place-info,
+.weather {
+    background-color: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.place-info h2,
+.weather-title {
+    font-family: var(--font-heading);
+    color: var(--ghana-green);
+    margin-bottom: 1rem;
+    border-bottom: 3px solid var(--ghana-red);
+    padding-bottom: 0.5rem;
+}
+
+.weather-icon-svg {
+    display: block;
+    margin: 0 auto 1rem auto;
+    width: 60px;
+    height: 60px;
+}
+
+.weather-title::after {
+    content: none;
+}
+
+.weather-data p {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+}
+
+footer {
+    background-color: var(--ghana-red);
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    border-top: 6px solid var(--ghana-gold);
+}
+
+@media (min-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    .content-wrapper {
+        grid-template-columns: 2fr 1fr;
+        align-items: start;
+    }
+
+    .weather-icon-svg {
+        display: none;
+    }
+
+    .weather-title::after {
+        content: "\2600\FE0F";
+        margin-left: 0.75rem;
+        font-size: 1.5rem;
+    }
+
+    .weather {
+        position: sticky;
+        top: 1.5rem;
+    }
+}
