@@ -156,10 +156,6 @@ header h1 {
     justify-content: space-between;
 }
 
-.weather-card h2 .weather-icon-desktop {
-    font-size: 1.5rem;
-}
-
 /* SVG for mobile - hidden on desktop */
 .weather-icon-svg {
     display: none;
@@ -281,6 +277,11 @@ footer p {
         content: " 🇬🇭";
         font-size: 0.8em;
     }
+
+    .weather-card h2::after {
+        content: " ☀️";
+        font-size: 1.5rem;
+    }
 }
 
 /* ===== MOBILE STYLES ===== */
@@ -316,10 +317,6 @@ footer p {
 
     .weather-icon-svg {
         display: block;
-    }
-
-    .weather-icon-desktop {
-        display: none;
     }
 
     .weather-card li {
