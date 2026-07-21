@@ -1,0 +1,186 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Roboto, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f5f5;
+  color: #1a1a1a;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #2c3e50;
+  color: #ffffff;
+  padding: 1rem 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+#hamburger {
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  min-width: 44px;
+  min-height: 44px;
+  display: block;
+}
+
+#nav-menu {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  background-color: #34495e;
+  margin-top: 0.5rem;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+#nav-menu.open {
+  display: flex;
+}
+
+#nav-menu button {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 1rem;
+  padding: 0.875rem 1rem;
+  cursor: pointer;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-family: inherit;
+  width: 100%;
+}
+
+#nav-menu button:first-child {
+  border-top: none;
+}
+
+#nav-menu button:hover,
+#nav-menu button:focus-visible {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #ecf0f1;
+  outline: 2px solid #f39c12;
+  outline-offset: -2px;
+}
+
+main {
+  flex: 1;
+  max-width: 1200px;
+  width: 95%;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+}
+
+main h2 {
+  text-align: center;
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+  color: #1a1a1a;
+}
+
+.temple-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.temple-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+}
+
+.temple-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  order: -1;
+  margin-bottom: 0.25rem;
+}
+
+.temple-card h3 {
+  font-size: 1.2rem;
+  color: #2c3e50;
+  margin-top: 0.25rem;
+}
+
+.temple-card p {
+  font-size: 0.9rem;
+  color: #333333;
+  line-height: 1.5;
+}
+
+footer {
+  background-color: #2c3e50;
+  color: #ffffff;
+  text-align: center;
+  padding: 1.25rem;
+  margin-top: auto;
+  font-size: 0.9rem;
+}
+
+footer p {
+  margin: 0.25rem 0;
+}
+
+#lastModified {
+  color: #f1c40f;
+  font-size: 0.8rem;
+}
+
+@media screen and (min-width: 40rem) {
+  #hamburger {
+    display: none;
+  }
+
+  #nav-menu {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    background-color: transparent;
+    margin-top: 0;
+  }
+
+  #nav-menu button {
+    border: none;
+    width: auto;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+  }
+
+  #nav-menu button:hover,
+  #nav-menu button:focus-visible {
+    background-color: rgba(255, 255, 255, 0.15);
+    outline: 2px solid #f39c12;
+    outline-offset: 2px;
+  }
+
+  .temple-cards {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+}
