@@ -108,11 +108,11 @@ function displayTemples(templeArray) {
 }
 
 function initFilters() {
-  document.getElementById("home").addEventListener("click", () => displayTemples(temples));
-  document.getElementById("old").addEventListener("click", () => displayTemples(temples.filter(t => parseInt(t.dedicated) < 1900)));
-  document.getElementById("new").addEventListener("click", () => displayTemples(temples.filter(t => parseInt(t.dedicated) > 2000)));
-  document.getElementById("large").addEventListener("click", () => displayTemples(temples.filter(t => t.area > 90000)));
-  document.getElementById("small").addEventListener("click", () => displayTemples(temples.filter(t => t.area < 10000)));
+  document.getElementById("home").addEventListener("click", e => { e.preventDefault(); displayTemples(temples); });
+  document.getElementById("old").addEventListener("click", e => { e.preventDefault(); displayTemples(temples.filter(t => parseInt(t.dedicated) < 1900)); });
+  document.getElementById("new").addEventListener("click", e => { e.preventDefault(); displayTemples(temples.filter(t => parseInt(t.dedicated) > 2000)); });
+  document.getElementById("large").addEventListener("click", e => { e.preventDefault(); displayTemples(temples.filter(t => t.area > 90000)); });
+  document.getElementById("small").addEventListener("click", e => { e.preventDefault(); displayTemples(temples.filter(t => t.area < 10000)); });
 }
 
 function initHamburger() {
