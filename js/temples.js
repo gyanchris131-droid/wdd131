@@ -53,21 +53,21 @@ const temples = [
     location: "St. George, Utah, United States",
     dedicated: "1877, April, 6",
     area: 110000,
-    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/st-george-utah/400x250/st-george-temple-766112-wallpaper.jpg"
+    imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/st.-george-utah-temple/st.-george-utah-temple-40435-main.jpg"
   },
   {
     templeName: "Cob\u00e1n Guatemala",
     location: "Cob\u00e1n, Guatemala",
     dedicated: "2020, July, 12",
     area: 7000,
-    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/coban-guatemala/400x250/coban-guatemala-temple-1586764-wallpaper.jpg"
+    imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/coban-guatemala-temple/coban-guatemala-temple-46348-main.jpg"
   },
   {
     templeName: "Red Cliffs Utah",
     location: "St. George, Utah, United States",
     dedicated: "2024, March, 24",
     area: 96021,
-    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/red-cliffs-utah/400x250/red-cliffs-utah-temple-1586772-wallpaper.jpg"
+    imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/red-cliffs-utah-temple/red-cliffs-utah-temple-44958-main.jpg"
   }
 ];
 
